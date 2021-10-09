@@ -42,7 +42,7 @@ func RedisConnect(config RedisConfig) *redis.Client {
   return client
 }
 
-// MgoGetSession gets the Mgo Session keyed by the specified name. Panics if the session hasn't
+// RedisGetClient gets the Redis client keyed by the specified name. Panics if the client hasn't
 // been created as of this call.
 func RedisGetClient(name string) *redis.Client {
 
